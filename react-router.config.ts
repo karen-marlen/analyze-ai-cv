@@ -1,7 +1,9 @@
-import type { Config } from "@react-router/dev/config";
+import type { RouteConfig } from "@react-router/dev/routes";
 
-export default {
-  // Config options...
-  // Server-side render by default, to enable SPA mode set this to `false`
-  ssr: true,
-} satisfies Config;
+export default [
+  {
+    path: "/",
+    file: "./home.tsx",
+  },
+  // más rutas...
+] satisfies RouteConfig;
